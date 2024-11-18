@@ -55,11 +55,10 @@ main {
 .form-section {
     background-color: whitesmoke;
     width: 65%;
-    padding-top: 3rem;
 }
 
 .heading-div {
-    padding: 4rem;
+    padding: 4rem 0 2rem 3rem;
     font-weight: 500;
     font-size: 1.5rem;
 }
