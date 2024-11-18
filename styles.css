@@ -23,7 +23,7 @@ p {
 
 main {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
 }
 /* left/picture section  */
 .picture-section {
