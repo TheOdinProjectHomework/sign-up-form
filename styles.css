@@ -4,12 +4,153 @@
     box-sizing: border-box;
 }
 
+body {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: NorseFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+p {
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
 main {
     display: flex;
     height: 100vh;
 }
-
+/* left/picture section  */
 .picture-section {
     width: 35%;
-    background-image: url(./images/leaf-bg.jpg);
+    background: url(./images/leaf-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 15% 0;
+}
+
+.title-div {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+.title-div img {
+    height: 10rem;
+}
+
+.title-div p {
+    font-size: 4rem;
+    font-family: NorseFont, sans-serif;
+}
+
+/* form section style */
+.form-section {
+    background-color: whitesmoke;
+    width: 65%;
+    padding-top: 3rem;
+}
+
+.heading-div {
+    padding: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.form-div {
+    padding-top: 1rem;
+}
+
+form {
+    font-size: 1em;
+}
+
+.name-set, .contact-set, .password-set, .form-title {
+    background-color: white;
+}
+
+.password-set {
+    box-shadow: 0px 4px 4px black;
+}
+
+.form-title {
+    padding: 1rem 3rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 3rem;
+}
+
+form input {
+    border: 1px solid #E5E7EB;
+    outline: none;
+    border-radius: .2rem;
+    padding: .4rem;
+    width: 15rem;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0 5px 5px rgba(56, 56, 57, 0.5);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+fieldset {
+    display: flex;
+    gap: 3rem;
+}
+
+.set-p {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+/* button section */
+.button-set {
+    background-color: whitesmoke;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-set input[type="submit"] {
+    background-color: #596D48;
+    border: 0;
+    border-radius: .4rem;
+    padding: .8rem;
+    font-size: 1rem;
+    width: 14rem;
+    color: azure;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-set input[type="submit"]:active {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.button-set p {
+    font-weight: 500;
+}
+
+.button-set a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
 }
