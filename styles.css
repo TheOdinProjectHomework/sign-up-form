@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.picture-section {
+    width: 35%;
+    background-image: url(./images/leaf-bg.jpg);
+}
